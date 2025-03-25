@@ -1,60 +1,95 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
 }
 
 header {
     background-color: #333;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a {
     color: white;
-    padding: 10px 0;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
+nav .nav-links {
+    list-style: none;
+    display: flex;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 20px;
+nav .nav-links li {
+    margin: 0 15px;
 }
 
-nav ul li a {
+nav .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
 section {
-    padding: 40px;
+    padding: 80px 20px;
     text-align: center;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
+.home {
+    background-color: #f4f4f4;
+}
+
+.about, .contact {
+    background-color: #e2e2e2;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+form input, form textarea {
     width: 100%;
-}
-
-#contact-form input, #contact-form textarea {
-    width: 300px;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    font-size: 16px;
 }
 
-button {
-    padding: 10px 20px;
+form button {
     background-color: #333;
     color: white;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
 }
 
-button:hover {
+form button:hover {
     background-color: #555;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
